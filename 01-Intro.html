@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--javascript can change the html content of a page using .getElementById() method-->
+    <p id="demo">javascript can change the html content of a webpage</p>
+    <button
+      onclick="document.getElementById('demo').innerHTML='hello javascript'"
+    >
+      Click me
+    </button>
+    <!--Javascript can change the html attribute of an element-->
+    <br /><button
+      onclick="document.getElementById('sun').src='./images/moon.svg'"
+    >
+      click me to get the moon
+    </button>
+    <img src="./images/sun.svg" alt="sun" style="height: 48px" id="sun" />
+    <button onclick="document.getElementById('sun').src='./images/sun.svg'">
+      click me to get the sun
+    </button>
+    <!--Javascript can change html styles also-->
+    <p
+      id="demo-1"
+      style="
+        color: blueviolet;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: larger;
+        font-weight: 900;
+        cursor: pointer;
+      "
+      onclick="document.getElementById('demo-1').style.fontSize='50px'"
+    >
+      Hello Javascript
+    </p>
+    <!--Javascript can hide html elements by changing their display property -->
+    <p id="demo-2">Javascript can hide HTML elements</p>
+    <button
+      style="cursor: pointer"
+      onclick="document.getElementById('demo-2').style.display='none'"
+    >
+      Hide me!
+    </button>
+    <!--Javascript can show html elements by changing their display property -->
+    <br />
+    <br />
+    <p id="demo-3" style="display: none">hello javascript</p>
+    <button onclick="document.getElementById('demo-3').style.display='block'">
+      Show element
+    </button>
+  </body>
+</html>
