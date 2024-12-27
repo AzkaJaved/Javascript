@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--1- writing into html elements using .innerHTML -->
+    <p id="demo"></p>
+    <!--using document.write after the document has loaded will delete all the existing HTML-->
+    <br />
+    <button onclick="document.write(5+6)">
+      click me to write into document!</button
+    ><br />
+    <script>
+      document.getElementById("demo").innerHTML = "hello javascript";
+    </script>
+    <!--
+    2-writing into browser using console.log
+  -->
+    <button onclick="myFunction()">click me write into console</button>
+    <!-- 3-writing into alert box using window.alert() -->
+    <br />
+    <button onclick="alert('hello')">Click me to get an alert box</button>
+    <!--4- writing into html output using document.write    -->
+    <script>
+      document.write(5 + 7);
+      function myFunction() {
+        console.log("hello javascript");
+      }
+    </script>
+    <!--Printing a page using default window.print() method-->
+    <br />
+    <button onclick="window.print()">Print me</button><br />
+  </body>
+</html>
